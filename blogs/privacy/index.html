@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>隱私權政策 · Rclone Backup Access</title>
+<style>
+  :root{
+    --bg:#0b0e13; --panel:rgba(255,255,255,.04); --edge:rgba(255,255,255,.12);
+    --ink:rgba(255,255,255,.94); --muted:rgba(255,255,255,.58);
+    --accent:#ff3b30; --shadow:0 25px 90px rgba(0,0,0,.58);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:6vh 5vw 12vh;
+    background:
+      radial-gradient(1100px 900px at 50% 12%, rgba(255,59,48,.10), transparent 55%),
+      linear-gradient(180deg,#07090d,var(--bg));
+    color:var(--ink); line-height:1.75;
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  }
+  main{max-width:760px;margin:0 auto}
+  .eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 .6rem}
+  h1{font-size:clamp(1.6rem,4vw,2.3rem);margin:0 0 .3rem;font-weight:650;letter-spacing:.01em}
+  .sub{color:var(--muted);margin:0 0 2.6rem;font-size:.95rem}
+  h2{font-size:1.05rem;margin:2.4rem 0 .7rem;font-weight:620}
+  h2::before{content:"";display:inline-block;width:8px;height:8px;background:var(--accent);
+    border-radius:2px;margin-right:.6rem;vertical-align:.12em}
+  p,li{color:rgba(255,255,255,.82);font-size:.95rem}
+  ul{padding-left:1.2rem}
+  li{margin:.35rem 0}
+  code{background:var(--panel);border:1px solid var(--edge);border-radius:5px;
+    padding:.1rem .38rem;font-size:.86em;color:var(--ink)}
+  a{color:#ff7a72}
+  .card{background:var(--panel);border:1px solid var(--edge);border-radius:14px;
+    padding:1.1rem 1.3rem;box-shadow:var(--shadow);margin:1.2rem 0}
+  footer{margin-top:3.4rem;padding-top:1.4rem;border-top:1px solid var(--edge);
+    color:var(--muted);font-size:.85rem}
+  .en{color:var(--muted);font-size:.88rem}
+  .en h2{color:var(--ink)}
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Privacy Policy</p>
+  <h1>隱私權政策</h1>
+  <p class="sub">適用於 OAuth 應用程式「Rclone Backup Access」· 最後更新 2026 年 9 月 7 日</p>
+
+  <div class="card">
+    <p style="margin:0">「Rclone Backup Access」是一個<strong>個人自用</strong>的 Google OAuth 用戶端。
+    它的唯一用途，是讓擁有者透過開源工具 <a href="https://rclone.org/" rel="noopener">rclone</a>
+    把自己電腦上的檔案，備份到<strong>自己的</strong> Google 雲端硬碟。它不對外提供服務，也沒有其他使用者。</p>
+  </div>
+
+  <h2>我們存取什麼</h2>
+  <ul>
+    <li>權限範圍僅有 <code>https://www.googleapis.com/auth/drive</code>，且只作用於<strong>授權者本人</strong>的 Google 雲端硬碟。</li>
+    <li>存取行為限於：讀取、上傳、更新擁有者自己的備份檔案與資料夾。</li>
+    <li>不讀取通訊錄、郵件、日曆、相片或任何其他 Google 服務的資料。</li>
+  </ul>
+
+  <h2>我們不做什麼</h2>
+  <ul>
+    <li>不收集、不儲存、不傳輸任何第三方使用者的個人資料。</li>
+    <li>不將任何資料出售、出租或分享給第三方。</li>
+    <li>不使用分析工具、廣告或跨站追蹤。</li>
+    <li>不將取得的資料用於訓練人工智慧模型。</li>
+    <li>沒有伺服器端資料庫：本應用程式完全在擁有者的本機電腦上執行。</li>
+  </ul>
+
+  <h2>憑證如何保存</h2>
+  <p>OAuth 存取權杖與更新權杖僅保存在擁有者本機的 rclone 設定檔
+  （<code>~/.config/rclone/rclone.conf</code>），不會上傳到任何伺服器，也不會離開該台電腦。</p>
+
+  <h2>如何撤銷授權</h2>
+  <p>擁有者可隨時於
+  <a href="https://myaccount.google.com/permissions" rel="noopener">Google 帳戶權限頁面</a>
+  移除本應用程式的存取權；撤銷後本機的權杖立即失效。</p>
+
+  <h2>Google API 服務使用者資料政策</h2>
+  <p>本應用程式使用 Google API 所取得的資訊，其使用與轉移均遵守
+  <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API 服務使用者資料政策</a>，
+  包含其中的「限制使用」（Limited Use）規定。</p>
+
+  <h2>聯絡方式</h2>
+  <p>有任何疑問請寄至 <a href="mailto:suenyulei@gmail.com">suenyulei@gmail.com</a>。</p>
+
+  <div class="en">
+    <h2>English summary</h2>
+    <p>“Rclone Backup Access” is a personal-use Google OAuth client. Its sole purpose is to let its
+    owner back up their own local files to their own Google Drive using the open-source tool rclone.
+    It requests only the <code>https://www.googleapis.com/auth/drive</code> scope and acts exclusively on the
+    authorizing user’s own Drive. It has no other users, collects no third-party personal data, shares
+    nothing with third parties, runs no analytics or advertising, and does not use any obtained data to
+    train AI models. It runs entirely on the owner’s local machine; OAuth tokens are stored only in the
+    local rclone configuration file and are never transmitted elsewhere. Access can be revoked at any
+    time at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.
+    Use and transfer of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>,
+    including the Limited Use requirements. Contact: suenyulei@gmail.com.</p>
+  </div>
+
+  <footer>
+    <a href="/">← 回到 bdfzer.com</a>
+  </footer>
+</main>
+</body>
+</html>
